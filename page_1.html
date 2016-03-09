@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style/start.css" type="text/css" media="screen" /> 
+<title> WELCOME TO PORTUGAL</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<img src="images/portugal_start_page.jpg" style='position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:-1;'>  
+</head>
+
+<body>
+
+
+<div id="container" class="box">
+
+    <div class="box top left">
+	<img src="images/fado.jpg"> 
+    <div class="hoverFado" onmouseover="PlaySound('myFado')" 
+    onmouseout="StopSound('myFado')"><b><u>FADO</b></u>, a music genre traced to the 1820s and characterized by mournful tunes and lyrics,
+	often about the sea or the life of the poor, and infused with a sentiment of resignation, fatefulness and melancholia 
+	(comes from the word "saudade, or "longing", symbolizing a feeling of loss). This is the music of a historic Portuguese urban and 
+	maritime proletariat, and is normally accompanied by the Portuguese guitar, a plucked string instrument with twelve 
+	steel strings, strung in six courses comprising two strings each (one of the few musical instruments that still uses Preston tuners).
+    <audio id="myFado">
+	<source src="sounds/amalia.mp3">
+    <source src="sounds/amalia.ogg"></audio>
+	</div>	
+	</div>
+	
+    <div class="box top right">
+	<img src="images/guimaraes.jpg"> 
+	<div class="hoverCastles" onmouseover="PlaySound('myCastles')" 
+    onmouseout="StopSound('myCastles')"><b><u>CASTLES</u></b>, ancient military fortifications, a combination of experience learned from
+	ancient Romans (forts with high walls and strong towers) and medieval Moors (the stonework brought to Portugal in 711) 
+	and Christian forces. Many castles from the 13th-14th centuries (with more decorative touches and features) 
+	became fortified palaces to protect the monarch and courts. Nowadays most are ruins or shells of formerly magnificent constructions,
+	and only a very few have been restored. But they all remain a remarkable part of Portugal to explore.
+	<audio id="myCastles">
+	<source src="sounds/castles.mp3">
+    <source src="sounds/castles.ogg"></audio>
+	</div>
+	</div>
+	
+    <div class="box middle center">
+	<img src="images/azenhas.jpg"> 
+	<div class="hoverOcean"onmouseover="PlaySound('myOcean')" 
+    onmouseout="StopSound('myOcean')"><b><u>SURFING AND BEACHES</u></b>. Covering more than 850km, the Portuguese coast boasts 
+	the variety of white sandy beaches (Algarve, Lisbon Riviera, Costa da Caparica, Southwestern Alentejo, Troia, Dunas de Leiria, 
+    Peniche(costa de prata), etc.) for swimming/ bathing as well as for surfing (excellent conditions for surfers of every ability with a huge variety of waves:
+	the winter swell size of around the 6ft mark up to 15ft or more; the summer swell size of 3-5ft). BUT.. even if you are in the shallow 
+	water on the beach, beware of dangerous "rip currents"!!!
+		<audio id="myOcean">
+	<source src="sounds/mar.mp3">
+    <source src="sounds/mar.ogg"></audio></div>
+	</div>
+	
+    <div class="box bottom left"> <img src="images/pena.jpg"> 
+	<div class="hoverPalaces" onmouseover="PlaySound('myPalaces')" 
+    onmouseout="StopSound('myPalaces')"><b><u>WORLD HERITAGE</u></b>. With more than 18 cases (historic centres, 
+	archaeological sites, cultural landscapes, natural parks) granted by UNESCO, the country 
+	attracts visitors to explore its royal palaces, historical city centres (Oporto, Evora, Guimarães, Tomar),
+	the Alto Douro wine region, the medieval monasteries of Alcobaca, Batalha, Hieronymites etc.
+	Don't forget magnificent Sintra, the town of four royal palaces, the Mourish castle, the mysterious Regaleira
+  Estate, the Capuchos Convent ... where you smell pine-trees and the ocean breeze. 
+	<audio id="myPalaces">
+	<source src="sounds/palaces.mp3">
+    <source src="sounds/palaces.ogg"></audio>
+	</div>
+	
+	</div>
+	
+    <div class="box bottom right"> <img src="images/mosteiro.jpg"> 
+	<div class="hoverStyle" onmouseover="PlaySound('myManuelino')" 
+    onmouseout="StopSound('myManuelino')"> <b><u>MANUELINE STYLE</u></b>(Portuguese late Gothic), 
+	the early 16th century architectural ornamentation style, 
+	incorporating maritime elements and discoveries brought 
+	from the voyages of Vasco da Gama and Pedro Álvares Cabral. It synthesizes aspects of Late Gothic architecture,
+	Spanish Plateresque style, Mudéjar, Italian urban architecture, and Flemish elements. 
+	Neo-manueline (middle 19th century) started with the construction of the Pena Palace in Sintra, continuing
+	with the restoration of the Jerónimos Monastery and the Belém Tower in Lisbon.
+	<audio id="myManuelino">
+	<source src="sounds/manuelino.mp3">
+    <source src="sounds/manuelino.ogg"></audio>
+	</div>
+	</div>
+</div>
+
+<script>
+function PlaySound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.play();
+}
+
+function StopSound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.pause();
+    thissound.currentTime = 0;
+}
+</script>
+
+</body>
+
+</html>
