@@ -1,0 +1,235 @@
+
+
+#centred {
+  position:fixed;
+    top: 50%;
+    left: 50%;
+    width:30em;
+    height:18em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 1px none #ccc;
+	 font-family: 'Keetano Gaijin', arial;
+	 font-size: 40px;
+   // background-color: #6F4E37;
+  		}
+	
+	.start {
+	height: 100%; 
+    width: 100%; 
+    max-width: 250px; 
+    max-height: 200px;
+	margin-left: auto;
+    margin-right: auto;
+	display:block;
+	-webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 4s;
+			}
+		
+	img.start:hover {
+	max-width: 400px;
+max-height: 350px;	
+	}	
+	
+	
+	
+	p {
+	text-align:center;
+	//color: #121212;
+		
+	}
+	
+#container{
+width: 900px; 
+height: 600px;
+top: 50%;
+left:50%;
+ border: 1px solid black;
+ padding: 1px;
+ position: absolute;  /*relative*/
+  margin-left: -450px;
+    margin-top: -250px;
+	background-image: url('../images/azulejo.jpg');
+	//background-color:  #78B6A4;
+}		
+
+.box img {
+  	height: 100%; 
+    width: 100%; 
+    max-width: 250px; 
+    max-height: 200px;
+	background-size: auto;
+	-webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 4s;
+	
+		}		 
+
+	
+.box{
+    border:1px white;
+    position:absolute;
+    width:250px;
+    height:200px;
+-webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 4s;	
+    }
+
+.top{top:0}
+.middle{top:50%;margin-top:-100px;/*half of the .box height*/}
+.bottom{bottom:0}
+
+.left{left:0;}
+.center{left:50%;margin-left:-125px;/*half of the .box width*/}
+.right{right:0;}
+
+
+
+.hoverFado {
+ -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+  position: absolute;
+  text-align:justify;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #520000;
+  color: #fff;
+
+
+  visibility: hidden;
+  opacity: 0;
+
+  /*remove comment if you want a gradual transition between states
+  -webkit-transition: visibility opacity 0.2s;
+  */
+}
+
+
+.box.top.left:hover .hoverFado {
+  visibility: visible;
+  opacity: 1;
+  width:300px;
+  height:250px;
+}
+
+.hoverCastles{
+-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+ transition: width 2s;
+  position: absolute;
+  text-align:justify;
+  top: 0;
+  bottom: 0;
+  left:auto;
+  right: 0;
+  background: #33AD33;
+  color: #fff;
+
+
+  visibility: hidden;
+  opacity: 0;
+
+  /*remove comment if you want a gradual transition between states
+  -webkit-transition: visibility opacity 0.2s;
+  */
+}
+
+
+.box.top.right:hover .hoverCastles {
+  visibility: visible;
+  opacity: 1;
+  width:300px;
+  height:250px;
+  
+}
+
+
+.hoverOcean {
+-webkit-transition: all; /* For Safari 3.1 to 6.0 */
+ transition: all;
+  position: absolute;
+  text-align:justify;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2E5CE6;
+  color: #fff;
+
+
+  visibility: hidden;
+  opacity: 0;
+
+  /*remove comment if you want a gradual transition between states
+  -webkit-transition: visibility opacity 0.2s;
+  */
+}
+
+
+.box.middle.center:hover .hoverOcean {
+  visibility: visible;
+  opacity: 1;
+   width:300px;
+  height:250px;
+}
+
+
+.hoverPalaces {
+  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+ transition: width 2s;
+  position: absolute;
+  text-align:justify;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #F2610D;
+  color: #fff;
+
+
+  visibility: hidden;
+  opacity: 0;
+
+  /*remove comment if you want a gradual transition between states
+  -webkit-transition: visibility opacity 0.2s;
+  */
+}
+
+
+.box.bottom.left:hover .hoverPalaces {
+  visibility: visible;
+  opacity: 1;
+  width:300px;
+  height:250px;
+ 
+}
+
+
+.hoverStyle {
+-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+ transition: width 2s;
+  position: absolute;
+  text-align:justify;
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  background: #6600CC;
+  color: #fff;
+
+
+  visibility: hidden;
+  opacity: 0;
+
+  /*remove comment if you want a gradual transition between states
+  -webkit-transition: visibility opacity 0.2s;
+  */
+}
+
+
+.box.bottom.right:hover .hoverStyle {
+  visibility: visible;
+  opacity: 1;
+  width:300px;
+  height:250px;
+}
